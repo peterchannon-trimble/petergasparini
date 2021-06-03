@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace HelloWorldProgram
 {
@@ -6,7 +7,13 @@ namespace HelloWorldProgram
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World! PartyPete!");
+			while (true)
+			{
+				Console.WriteLine("Hello World! PartyPete!");
+				int milliseconds = 2000;
+				Thread.Sleep(milliseconds);
+			}
+			
 		}
 	}
 }

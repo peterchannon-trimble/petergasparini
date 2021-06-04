@@ -1,0 +1,21 @@
+name: Docker Image CI
+
+on:
+  pull_request:
+    branches: [ main ]
+    types: [closed]
+
+jobs:
+
+  pushECR:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      name: Check out code
+    - uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+          image: my-image-name
+          registry: 972171986385.dkr.ecr.us-west-2.amazonaws.com
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

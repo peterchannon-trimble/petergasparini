@@ -9,7 +9,7 @@ namespace HelloWorldProgram
 		{
 			while (true)
 			{
-				Console.WriteLine("Hello World! PartyPete!");
+				Console.WriteLine("Hello World! PartyPete! Test PR");
 				int milliseconds = 2000;
 				Thread.Sleep(milliseconds);
 			}

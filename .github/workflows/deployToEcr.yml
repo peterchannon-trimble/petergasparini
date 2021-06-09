@@ -13,7 +13,7 @@ jobs:
       name: Check out code
     - uses: mr-smithers-excellent/docker-build-push@v5
       with:
-          image: helloworld:testTag
+          image: helloworld:latest
           registry: 972171986385.dkr.ecr.us-west-2.amazonaws.com
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

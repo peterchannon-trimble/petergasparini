@@ -11,9 +11,6 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM httpd:2.4
-COPY ./html/ /usr/local/apache2/htdocs/
-
 FROM base as build
 WORKDIR /src
 

@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/GithubActionsTaskDefinitions",
+          "awslogs-group": "/ecs/first-run-task-definition",
           "awslogs-region": "us-west-2",
           "awslogs-stream-prefix": "ecs"
         }
@@ -26,10 +26,10 @@
         }
       ],
       "command": [
-        "/bin/sh -c \"echo '<html> <head> <title>Soeldner Consult AWS Demo</title><style>body {margin-top: 40px; background-color: #333;} </style> </head><body> <div style=color:white;text-align:center> <h1>Amazon ECS - Sample Web Server </h1> <h2>Congratulations!</h2> <p>You successfully set up your ECS cluster.</p> </div></body></html>' > /usr/local/apache2/htdocs/index.html && httpd-foreground\""
+        "/bin/sh -c \"echo '<html> <head> <title>Amazon ECS Sample App</title> <style>body {margin-top: 40px; background-color: #333;} </style> </head><body> <div style=color:white;text-align:center> <h1>Amazon ECS Sample App</h1> <h2>Congratulations!</h2> <p>Your application is now running on a container in Amazon ECS.</p> </div></body></html>' >  /usr/local/apache2/htdocs/index.html && httpd-foreground\""
       ],
       "linuxParameters": null,
-      "cpu": 10,
+      "cpu": 256,
       "environment": [],
       "resourceRequirements": null,
       "ulimits": null,
@@ -39,10 +39,10 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": null,
+      "memoryReservation": 512,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "httpd:2.4",
+      "image": "972171986385.dkr.ecr.us-west-2.amazonaws.com/helloworld:d77800e6800b58ccf2fb8f7c24019a2e9266a9e2",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -59,18 +59,18 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "httpd-container"
+      "name": "sample-app"
     }
   ],
   "placementConstraints": [],
-  "memory": "1024",
-  "taskRoleArn": "arn:aws:iam::972171986385:role/ecsTaskExecutionRole",
+  "memory": "512",
+  "taskRoleArn": null,
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-west-2:972171986385:task-definition/GithubActionsTaskDefinitions:1",
-  "family": "GithubActionsTaskDefinitions",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-2:972171986385:task-definition/first-run-task-definition:6",
+  "family": "first-run-task-definition",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -88,13 +88,25 @@
       "targetId": null,
       "targetType": null,
       "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
       "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
     },
     {
       "targetId": null,
       "targetType": null,
       "value": null,
-      "name": "com.amazonaws.ecs.capability.task-iam-role"
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "ecs.capability.execution-role-ecr-pull"
     },
     {
       "targetId": null,
@@ -115,7 +127,7 @@
   ],
   "networkMode": "awsvpc",
   "cpu": "256",
-  "revision": 1,
+  "revision": 6,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,

@@ -71,14 +71,6 @@ jobs:
         task-definition: task-definition.json
         container-name: helloworld
         image: ${{ steps.build-image.outputs.image }}
-    
-    - name: Modify Amazon ECS task definition with second container
-      id: render-app-container
-      uses: aws-actions/amazon-ecs-render-task-definition@v1
-      with:
-        task-definition: ${{ steps.task-def.outputs.task-definition }}
-        container-name: helloworld
-        image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1

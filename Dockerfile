@@ -6,7 +6,6 @@ RUN apt-get install -y libgdiplus
 RUN apt-get install -y libc6-dev 
 RUN ln -s /usr/lib/libgdiplus.so/usr/lib/gdiplus.dll
 ENV ASPNETCORE_URLS=http://+:80
-
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443

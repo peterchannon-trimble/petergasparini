@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\HelloWorldProgram\\HelloWorldProgram.csproj",
-      "projectName": "HelloWorldProgram",
-      "projectPath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\HelloWorldProgram\\HelloWorldProgram.csproj",
+      "projectUniqueName": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\helloworldApiVersion\\helloworldApiVersion.csproj",
+      "projectName": "helloworldApiVersion",
+      "projectPath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\helloworldApiVersion\\helloworldApiVersion.csproj",
       "packagesPath": "C:\\Users\\pgaspar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\HelloWorldProgram\\obj\\",
+      "outputPath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\helloworldApiVersion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -60,6 +60,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\helloworldApiVersion\\helloworldApiVersion.csproj",
-      "projectName": "helloworldApiVersion",
-      "projectPath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\helloworldApiVersion\\helloworldApiVersion.csproj",
+      "projectUniqueName": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\HelloWorldProgram\\HelloWorldProgram.csproj",
+      "projectName": "HelloWorldProgram",
+      "projectPath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\HelloWorldProgram\\HelloWorldProgram.csproj",
       "packagesPath": "C:\\Users\\pgaspar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\helloworldApiVersion\\obj\\",
+      "outputPath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\HelloWorldProgram\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

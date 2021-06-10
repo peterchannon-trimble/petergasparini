@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wi6342IJXJzulwENpN6QnWJTUN366spyuu8WA0qs21aZoMM98WDha05SCeFLGRxcMqJMTMtVwEcfTleBVt5RIw==",
+  "dgSpecHash": "YJrU2AcY20sBF2EgJrd56yW3UkVVmgb0B63U2JfW5FfAvxO4d4+/EmlsnaOdLWuu5ACNA3T6dUOFvpsOSI/Tqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\helloworldApiVersion\\helloworldApiVersion.csproj",
+  "projectFilePath": "C:\\Users\\pgaspar\\source\\repos\\HelloWorldProgram\\HelloWorldProgram\\HelloWorldProgram.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

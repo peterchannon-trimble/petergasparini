@@ -1,4 +1,6 @@
-﻿@page
+﻿
+
+@page
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -7,5 +9,9 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>Useful link for learning  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">how to deploy aws to server</a>.</p>
+    <p>Useful link for learning  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">how to deploy aws to server in @Configuration.GetSection("AppConfig")["Environment"]</a>.</p>
 </div>
+
+
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration

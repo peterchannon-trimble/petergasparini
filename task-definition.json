@@ -24,23 +24,23 @@
             "command": null,
             "linuxParameters": null,
             "cpu": 256,
-            "environment": [
-                {
-                    "name": "Environment",
-                    "value": "Preview"
-                }
-            ],
+            "environment": null,
             "resourceRequirements": null,
             "ulimits": null,
             "dnsServers": null,
             "mountPoints": null,
             "workingDirectory": null,
-            "secrets": null,
+            "secrets": [
+                {
+                    "name": "Environment",
+                    "valueFrom": "HelloworldTest"
+                }
+            ],
             "dockerSecurityOptions": null,
             "memoryReservation": 512,
             "volumesFrom": null,
             "stopTimeout": null,
-            "image": "972171986385.dkr.ecr.us-west-2.amazonaws.com/helloworld:392704eb602e8f375b6d86d2a56c2793deed9e06",
+            "image": "972171986385.dkr.ecr.us-west-2.amazonaws.com/helloworld:3ffec8e5a0711757fc9102a7b0385b6b530a50f7",
             "startTimeout": null,
             "firelensConfiguration": null,
             "dependsOn": null,

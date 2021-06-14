@@ -25,6 +25,7 @@
 
 on:
   pull_request:
+    paths: HelloWorldProgram/**
     types: [closed]
 
 name: Deploy to Amazon ECS
